@@ -40,7 +40,7 @@ Capítulo 3: Repositorios remotos
 
 Ejercicio 4: Realizar un commit de los últimos cambios con el mensaje “Añadido índice del libro.” y ver el estado del repositorio.
 
-1: git commit -m "Añadido capítulo 3 sobre gestión de ramas indice.txt"
+1: git commit -m "Añadido índice del libro"
 2: git status
 
 Ejercicio 5: 1. Cambiar el fichero indice.txt para que contenga lo siguiente:
@@ -49,24 +49,24 @@ Capítulo 2: Flujo de trabajo básico
 Capítulo 3: Gestión de ramas
 Capítulo 4: Repositorios remotos
 
-1: 
+1: Ir a la ubicación del archivo y modificarlo desde allí
 
 2. Mostrar los cambios con respecto a la última versión guardada en el repositorio: 
 
-
+1: git diff
 
 3. Hacer un commit de los cambios con el mensaje “Añadido capítulo 3 sobre gestión de ramas”.
 
-
+1: git commit -m "Añadido capítulo 3 sobre gestión de ramas"
 
 Ejercicio 6: 1. Mostrar los cambios de la última versión del repositorio con respecto a la anterior.
 
-
+1: git diff HEAD^ HEAD
 
 2. Cambiar el mensaje del último commit por “Añadido capítulo 3 sobre gestión de ramas al índice.”
 
-
+1: git commit --amend -m "Añadido capítulo 3 sobre gestión de ramas al índice"
 
 3. Volver a mostrar los últimos cambios del repositorio.
 
-
+1: git show
