@@ -1,24 +1,27 @@
 Ejercicio 1 
 1. Mostrar el historial de cambios del repositorio.
 
-1: 
+1: git log
 
 2. Crear la carpeta capitulos y crear dentro de ella el fichero capitulo1.txt con el siguiente texto. 
         Git es un sistema de control de versiones ideado por Linus Torvalds.
 
-1: 
+1: mkdir capitulos
+2: echo Git es un sistema de control de versiones ideado por Linus Torvalds > capitulos\capitulo1.txt
+
 
 3. Añadir los cambios a la zona de intercambio temporal.
 
-1: 
+1: cd capitulos
+2: git add .
 
 4. Hacer un commit de los cambios con el mensaje “Añadido capítulo 1.”
 
-1: 
+1: git commit -m "Añadido capítulo 1."
 
 5. Volver a mostrar el historial de cambios del repositorio.
 
-1: 
+1: git log
 
 Ejercicio 2
 1. Crear el fichero capitulo2.txt en la carpeta capitulos con el siguiente texto.
@@ -26,19 +29,20 @@ Ejercicio 2
         en el repositorio. 2- Añadir los cambios a la zona de
         intercambio temporal. 3- Hacer un commit de los cambios.
 
-1: 
+1: echo El flujo de trabajo básico con Git consiste en: 1-Hacer cambios en el repositorio. 2-Añadir los cambios a la zona de intercambio temporal. 3-Hacer un commit de los cambios > capitulo2.txt
 
 2. Añadir los cambios a la zona de intercambio temporal.
 
-1: 
+1: git add . 
 
 3. Hacer un commit de los cambios con el mensaje “Añadido capítulo 2.”
 
-1: 
+1: git commit -m "Añadido capitulo2"
 
 4. Mostrar las diferencias entre la última versión y dos versiones anteriores.
 
-1: 
+1: cd ..
+2: git diff HEAD~2 HEAD -- capitulos/capitulo1.txt
 
 Ejercicio 3
 1. Crear el fichero capitulo3.txt en la carpeta capitulos con el siguiente texto.
@@ -46,38 +50,39 @@ Ejercicio 3
         versiones del mismo proyecto y trabajar de manera simultanea
         en ellas.
 
-1: 
+1: cd capitulos
+2: echo Git permite la creación de ramas lo que permite tener distinas versiones del mismo proyecto y trabajar de manera simultanea en ellas.  > capitulo3.txt
 
 2. Añadir los cambios a la zona de intercambio temporal.
 
-1: 
+1: git add . 
 
 3. Hacer un commit de los cambios con el mensaje “Añadido capítulo 3.”
 
-1: 
+1: git commit -m "Añadido capítulo 3"
 
 4. Mostrar las diferencias entre la primera y la última versión del repositorio.
 
-1: 
+1: git log
 
 Ejercicio 4
 1. Añadir al final del fichero indice.txt la siguiente línea:
 Capítulo 5: Conceptos avanzados
 
-1: 
+1: echo "Capitulo 5: Conceptos avanzados" >> indice.txt
 
 2. Añadir los cambios a la zona de intercambio temporal.
 
-1: 
+1: git add indice.txt
 
 3. Hacer un commit de los cambios con el mensaje “Añadido
 capítulo 5 al índice.”.
 
-1: 
+1: git commit -m "Añadido capítulo 5 al índice"
 
 4. Mostrar quién ha hecho cambios sobre el fichero indice.txt.
 
-1: 
+1: git annotate indice.txt
 
 
 
