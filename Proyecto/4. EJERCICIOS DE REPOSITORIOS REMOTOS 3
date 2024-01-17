@@ -1,0 +1,25 @@
+Ejercicio 1
+1. Crear un nuevo repositorio público en GitHub con el nombre libro-git.
+
+1: Ir a Github y crear el repositorio
+
+2. Añadirlo al repositorio local del libro.
+
+1: git remote add origin https://github.com/micvazquez/libro-git.git
+
+3. Mostrar todos los repositorios remotos configurados.
+
+1: git remote -v
+
+Ejercicio 2
+1. Añadir los cambios del repositorio local al repositorio remoto de GitHub.
+
+1: git branch
+2: git checkout master
+3: git add . 
+4: 
+5: 
+
+2. Acceder a GitHub y comprobar que se han subido los cambios mostrando el historial de versiones.
+
+1: 
