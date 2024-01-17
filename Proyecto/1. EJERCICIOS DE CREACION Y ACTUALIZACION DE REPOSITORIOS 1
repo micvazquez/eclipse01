@@ -17,14 +17,13 @@ Ejericio 3: 1. Comprobar el estado del repositorio.
 
 1: git status
 
-2. Crear un fichero indice.txt con el siguiente contenido:
+2. Crear un fichero indice.txt con el siguiente contenido.
 Capítulo 1: Introducción a Git
 Capítulo 2: Flujo de trabajo básico
 Capítulo 3: Repositorios remotos
 
 1: echo -e "Capitulo 1: Introduccion a Git\nCapitulo 2: Flujo de trabajo básico\nCapitulo3: Repositorios remotos" > indice.txt
 2: type indice.txt
-
 
 3. Comprobar de nuevo el estado del repositorio.
 
@@ -51,7 +50,7 @@ Capítulo 4: Repositorios remotos
 
 1: Ir a la ubicación del archivo y modificarlo desde allí
 
-2. Mostrar los cambios con respecto a la última versión guardada en el repositorio: 
+2. Mostrar los cambios con respecto a la última versión guardada en el repositorio.
 
 1: git diff
 
