@@ -13,7 +13,7 @@ Ejercicio 1
 3. Añadir los cambios a la zona de intercambio temporal.
 
 1: cd capitulos
-2: git add capitulo3.txt
+2: git add .
 
 4. Hacer un commit de los cambios con el mensaje “Añadido capítulo 1.”
 
@@ -55,7 +55,7 @@ Ejercicio 3
 
 2. Añadir los cambios a la zona de intercambio temporal.
 
-1: git add . 
+1: git add capitulo3.txt 
 
 3. Hacer un commit de los cambios con el mensaje “Añadido capítulo 3.”
 
