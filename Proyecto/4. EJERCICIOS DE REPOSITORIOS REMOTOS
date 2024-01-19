@@ -82,7 +82,7 @@ Buscamos el bóton "Fork" en la esquina superior derecha de la página. Esto cre
 
 7. Subir los cambios de la rama autoria al repositorio remoto en GitHub.
 
-git checkout  -b autoria
+1: git checkout  -b autoria
 
 8. Hacer un Pull Request de los cambios en la rama autoria.
 
