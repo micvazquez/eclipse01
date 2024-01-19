@@ -14,12 +14,88 @@ Ejercicio 1
 Ejercicio 2
 1. Añadir los cambios del repositorio local al repositorio remoto de GitHub.
 
-1: git branch
-2: git checkout master
-3: git add . 
-4: 
-5: 
+1: git push master
+2: git add .
 
 2. Acceder a GitHub y comprobar que se han subido los cambios mostrando el historial de versiones.
 
-1: 
+Visita la página de tu repositorio https://github.com/micvazquez/libro-git
+
+Dirígete a la pestaña "Commits". Aquí veremos el commit más reciente.
+
+Puedes hacer clic en cada commit para ver los cambios realizados en ese commit en particular.
+
+Ejercicio 3
+1. Colaborar en el repositorio remoto libro-git de otro usuario.
+
+El propietario te tiene que dar permisos de colaboración, así se puede trabajar
+directamente en su repositorio
+
+2. Clonar su repositorio libro-git.
+
+1: git clone https://github.com/asalber/libro-git.git
+
+3. Añadir el fichero autores.txt que contenga el nombre del usuario y su correo electrónico.
+
+1: echo micvazquez > autores.txt
+2: echo correo@gmail.com >> autores.txt
+
+4. Añadir los cambios a la zona de intercambio temporal.
+
+1: git add autores.txt
+
+5. Hacer un commit con el mensaje “Añadido autor.”
+
+1: git commit -m "Añadido autor"
+
+6. Subir los cambios al repositorio remoto.
+
+1: git push origin master
+
+
+Ejercicio 4
+1. Hacer una bifurcación del repositorio remoto asalber/libro-git en GitHub.
+
+Vamos a la página: https://github.com/asalber/libro-git
+Buscamos el bóton "Fork" en la esquina superior derecha de la página. Esto creará una copia del repositorio en tu cuenta de GitHub.
+
+2. Clonar el repositorio creado en la cuenta de GitHub del usuario.
+
+1: git clone https://github.com/asalber/libro-git.git
+
+3. Crear una nueva rama autoria y activarla.
+
+1: git checkout  -b autoria
+
+4. Añadir el nombre del usuario y su correo al fichero
+autores.txt.
+
+1: echo micvazquez > autores.txt
+2: echo correo@gmail.com >> autores.txt
+
+5. Añadir los cambios a la zona de intercambio temporal.
+
+1: git add autores.txt
+
+6. Hacer un commit con el mensaje “Añadido nuevo autor.”
+
+1: git commit -m "Añadido nuevo autor"
+
+7. Subir los cambios de la rama autoria al repositorio remoto en
+GitHub.
+
+git checkout  -b autoria
+
+8. Hacer un Pull Request de los cambios en la rama autoria.
+
+Visita la página de tu repositorio en GitHub (https://github.com/micvazquez/libro-git).
+
+Cambia a la rama "autoria".
+
+Clic en el botón "Compare & pull request".
+
+Proporciona una descripción y crea el Pull Request.
+
+
+
+
