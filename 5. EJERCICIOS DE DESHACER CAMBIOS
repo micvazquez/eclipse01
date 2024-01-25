@@ -1,0 +1,128 @@
+                                                 EJERCICIOS DE DESHACER
+                                                          CAMBIOS
+
+Ejercicio 1
+1. Eliminar la última línea del fichero indice.txt y guardarlo.
+
+1: Vamos a la ubicación del fichero, lo abrimos, eliminamos la línea y lo guardamos.
+
+2. Comprobar el estado del repositorio.
+
+1: git add indice.txt
+2: git add libro-git
+3: git status
+
+3. Deshacer los cambios realizados en el fichero indice.txt para volver a la versión anterior del fichero.
+
+1: git checkout -- indice.txt
+
+4. Volver a comprobar el estado del repositorio.
+
+1: git status
+
+Ejercicio 2
+1. Eliminar la última línea del fichero indice.txt y guardarlo.
+
+1: Vamos a la ubicación del fichero, lo abrimos, eliminamos la línea y lo guardamos.
+
+2. Añadir los cambios a la zona de intercambio temporal.
+
+1: git add .
+
+3. Comprobar de nuevo el estado del repositorio.
+
+1: git status
+
+4. Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.
+
+1: git restore indice.txt
+
+5. Comprobar de nuevo el estado del repositorio.
+
+1: git status
+
+6. Deshacer los cambios realizados en el fichero indice.txt para volver a la versión anterior del fichero.
+
+1: git checkout -- indice.txt
+
+7. Volver a comprobar el estado del repositorio.
+
+1: git status
+
+Ejercicio 3
+1. Eliminar la última línea del fichero indice.txt y guardarlo.
+
+1: Vamos a la ubicación del fichero, lo abrimos, eliminamos la línea y lo guardamos.
+
+2. Eliminar el fichero capitulos/capitulo3.txt.
+
+1: Vamos a la ubicación del archivo y lo eliminamos desde ahí.
+
+3. Añadir un fichero nuevo captitulos/capitulo4.txt vacío.
+
+1: cd capitulos
+2: echo. > capitulo4.txt
+
+4. Añadir los cambios a la zona de intercambio temporal.
+
+1: git add . 
+
+5. Comprobar de nuevo el estado del repositorio.
+
+1: git status
+
+6. Quitar los cambios de la zona de intercambio temporal, pero mantenerlos en el directorio de trabajo.
+
+1: git reset .
+
+7. Comprobar de nuevo el estado del repositorio.
+
+1: git status
+
+8. Deshacer los cambios realizados para volver a la versión del repositorio.
+
+1: git checkout .
+
+9. Volver a comprobar el estado del repositorio.
+
+1: git status
+
+Ejercicio 4
+1. Eliminar la última línea del fichero indice.txt y guardarlo.
+
+1: Vamos a la ubicación del fichero, lo abrimos, eliminamos la línea y lo guardamos.
+
+2. Eliminar el fichero capitulos/capitulo3.txt.
+
+1: Vamos a la ubicación del archivo y lo eliminamos desde ahí.
+
+3. Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Borrado accidental.”
+
+1: git add .
+2: git commit -m "Borrado accidental"
+
+4. Comprobar el historial del repositorio.
+
+1: git log
+
+5. Deshacer el último commit pero mantener los cambios anteriores en el directorio de trabajo y la zona de intercambio temporal.
+
+1: git reset --soft HEAD~1
+
+6. Comprobar el historial y el estado del repositorio.
+
+1: git status
+2: git log
+
+7. Volver a hacer el commit con el mismo mensaje de antes.
+
+1:  git commit -m "Borrado accidental"
+
+8. Deshacer el último commit y los cambios anteriores del directorio de trabajo volviendo a la versión anterior del repositorio.
+
+1: git reset --hard HEAD~1
+
+9. Comprobar de nuevo el historial y el estado del repositorio.
+
+1: git log
+2; git status
